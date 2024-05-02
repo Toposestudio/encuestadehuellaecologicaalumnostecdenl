@@ -1,0 +1,165 @@
+.encabezado {
+    width: 76%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(255, 209, 122);
+    z-index: 3;
+}
+
+.encabezadodepregunta {
+    width: 76%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(255, 209, 122);
+}
+
+.fondo {
+    margin: 0px;
+    background-color: rgb(250, 191, 83);
+    position: relative;
+}
+
+.subtitulo {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 50px 20px 5px 20px;
+    background-color: white;
+}
+
+.cuerpo {
+    font-size: 18px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.botones {
+    text-decoration: none;
+    background-color: rgb(206, 181, 134);
+    padding: 4px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(83, 73, 54);
+    
+}
+
+.fondomain {
+    width: 76%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    z-index: 4;
+}
+
+.fondomaindp {
+    width: 76%;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+.recuadro {
+    padding: 45px 20px 15px 18px;
+}
+
+.hiper {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    color: rgb(151, 148, 148);
+}
+
+.rellenado {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 6px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+
+.boxleft {
+    width: 150px;
+    height: 800px;
+    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/left.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+.boxderech {
+    width: 150px;
+    height: 800px;
+    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/derecho.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    animation-name: move;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+.pie {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 230, 198);
+    text-align: center;
+}
+
+.rec {
+    width: 20%;
+    height: 80px;
+    margin-left: 100px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.dedo {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.incon {
+    width: 20%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.dete {
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    background-color: transparent;
+    display: inline-block;
+}
+
+@keyframes move {
+    0% {
+      background-position: left; /* Posición inicial de la imagen de fondo */
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+      background-position: left; /* Posición final de la imagen de fondo (se moverá completamente a la derecha) */
+    }
+
+}

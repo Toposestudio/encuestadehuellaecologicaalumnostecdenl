@@ -1,0 +1,19 @@
+.titulo {
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(0, 162, 255);
+    margin: auto;
+}
+p {
+    color: rgb(255, 0, 0); 
+}
+.primerelemento {
+    color: blue; 
+}
+.tercerelemento {
+    color: aquamarine;
+}
+#tanata {
+    color: brown;
+}

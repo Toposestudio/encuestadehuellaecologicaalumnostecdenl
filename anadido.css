@@ -1,5 +1,6 @@
 .encabezado {
     width: 76%;
+    height: 12vh;
     margin: auto;
     font-size: 18px;
     padding: 20px;
@@ -7,8 +8,13 @@
     z-index: 3;
 }
 
+.cate {
+    font-weight: bold;
+}
+
 .encabezadodepregunta {
     width: 76%;
+    height: 12vh;
     margin: auto;
     font-size: 18px;
     padding: 20px;
@@ -37,6 +43,14 @@
     background-color: white;
 }
 
+.techo {
+    margin-top: 40px;
+}
+
+.suelo {
+    margin-bottom: 50px;
+}
+
 .botones {
     text-decoration: none;
     background-color: rgb(206, 181, 134);
@@ -50,6 +64,7 @@
 
 .fondomain {
     width: 76%;
+    height: 130vh;
     padding: 20px;
     margin: auto;
     background-color: white;
@@ -87,8 +102,8 @@
 }
 
 .boxleft {
-    width: 150px;
-    height: 800px;
+    width: 20vw;
+    height: 140vh;
     background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/left.jpg");
     background-attachment: fixed;
     background-size: contain;
@@ -102,8 +117,8 @@
 }
 
 .boxderech {
-    width: 150px;
-    height: 800px;
+    width: 20vw;
+    height: 140vh;
     background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/derecho.jpg");
     background-attachment: fixed;
     background-size: contain;
@@ -149,6 +164,15 @@
     margin: auto;
     background-color: transparent;
     display: inline-block;
+}
+
+.dopre {
+    margin-top: 20px;
+}
+
+.pf {
+    width: 25%;
+    font-size: 100px;
 }
 
 @keyframes move {

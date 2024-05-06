@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta</title>
     <link rel="stylesheet" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/anadido.css">
+    <link rel="icon" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/thewordmin.png" type="image/png">
+    
 </head>
 <body class="fondo">
     
@@ -55,7 +57,7 @@
 
             <!-- Continuar con el resto de preguntas... -->
 
-            <h2>¿Cuánto pagas de agua bimestralmente?</h2>
+<h2>¿Cuánto pagas de agua bimestralmente?</h2>
 <select class="rellenado" name="sel5" id="sel5">
     <option value="res51">Menos de 100</option>
     <option value="res52">100 a 200</option>
@@ -111,26 +113,27 @@
 
 <h2>¿Cuán grande es donde vives?</h2>
 <select class="rellenado" name="sel11" id="sel11">
-    <option value="res111">Pequeño (menos de 50 m²)</option>
-    <option value="res112">Mediano (50-100 m²)</option>
-    <option value="res113">Grande (más de 100 m²)</option>
+    <option value="res111">Pequeño (menos de 90 m²)</option>
+    <option value="res112">Mediano (90-160 m²)</option>
+    <option value="res113">Grande (más de 160 m²)</option>
 </select>
 
-<h2>¿De qué material está construida tu casa?</h2>
+<!--<h2>¿De qué material está construida tu casa?</h2>
 <select class="rellenado" name="sel12" id="sel12">
     <option value="res121">Concreto</option>
     <option value="res122">Madera</option>
     <option value="res123">Adobe o ladrillo de barro</option>
     <option value="res124">Otros materiales</option>
-</select>
+</select> -->
 
-<!--<h2>¿Cuántas personas en total viven allí?</h2>
+<h2>¿Cuántas personas en total viven allí?</h2>
 <select class="rellenado" name="totalPersonas" id="totalPersonas">
     <option value="resP1">1 persona</option>
     <option value="resP3">2 personas</option>
-    <option value="resP7">3 personas</option> -->
+    <option value="resP7">3 personas</option> 
+</select>
 
-<h2>¿Cuánto a la semana sales a una zona de esparcimiento, la expo, al estadio o a un centro comercial?</h2>
+<h2>¿Cuánto a la semana sales a una zona de esparcimiento (la expo, al estadio o a un centro comercial)?</h2>
 <select class="rellenado" name="sel13" id="sel13">
     <option value="res131">Nunca</option>
     <option value="res132">1-2 veces a la semana</option>
@@ -139,11 +142,19 @@
 </select>
 
         </form>
-        <script src="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/java/datos.js"></script>
-        <div id="selectortwo"></div>
+        
+        <div class="dopre">
+            <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/resultado.html" id="terminarEncuesta" class="botones">Terminar</a>
+            <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/index.html" class="botones">Volver a página principal</a>
+        </div>
     
     </main>
-    <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/index.html">Volver a pagina principal</a>
+
+    <script src="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/java/datos.js" type="module">
+
+
+
+    </script>
 </body>
 </html>
 
@@ -169,7 +180,7 @@
     </div>
     <main class="fondomaindp">
 
-        <!-- Pregunta 1 
+        Pregunta 1 
         <p id="pre1">¿Cuánto pagas de luz bimestralmente?</p>
         <form id="form1">
             <select class="rellenado" name="sel1" id="sel1">
@@ -192,7 +203,7 @@
             </select>
         </form>
 
-        <div id="selectortwo"></div>
+        <div id="  "></div>
     
     </main>
     <a href="index.html">Volver a página principal</a>

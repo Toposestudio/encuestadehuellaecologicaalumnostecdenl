@@ -20,16 +20,16 @@ var e=0;//uso del suelo
 }*/
 
 function vtot() {
-    let inteparent1 = v11 + v21 + v51 + v61 + v71 - v81 - v91 + v131;
-    let inteparent2 = v12 + v22 + v52 + v61 + v71 - v81 - v91 + v131;
-    let inteparent3 = v13 + v23 + v53 + v61 + v71 - v81 - v91 + v133;
+    let inteparent1 = v11 + v21 + v51 + v61 + v71 + v131;
+    let inteparent2 = v12 + v22 + v52 + v61 + v71 + v131;
+    let inteparent3 = v13 + v23 + v53 + v61 + v71 + v133;
     let segparentesis1 = inteparent1 * (v111);
     let segparentesis2 = inteparent2 * (v111);
     let segparentesis3 = inteparent3 * (v111);
     let vap1 = p1 * segparentesis1;
     let vap2 = p3 * segparentesis2;
     let vap3 = p7 * segparentesis3;
-    let vtotal = vap1 + vap2 + vap3;
+    let vtotal = vap1 + vap2 + vap3 - v81 - v91;
     localStorage.setItem('resultadoCalculo', vtotal);
 }
 
@@ -63,7 +63,7 @@ function calcat() {
             if (a == catMa) {
                 valcat = '<p class = "cuerpo techo">Tu generacion de contaminacion es mayor en <div class = "cate cuerpo"> electricidad </div> </p> <p class = "cuerpo suelo">Te recomendaríamos apagar y/o desconectar dispositivos eléctricos que no estés utilizando, cambiar los focos por luces LED, sustituir electrodomésticos "viejos" por unos nuevos con etiqueta ENERGY STAR, y, dentro de tus posibilidades económicas, considerar la instalación de paneles solares.</p>';
             } else if (b == catMa) {
-                valcat = '<p class = "cuerpo techo">Tu generacion de contaminacion es mayor en <div class = "cate cuerpo"> Generacion de basura </div> </p> <p class = "cuerpo suelo">Te recomendamos <div class = "cuerpo cate">reducir</div> las compras de productos con mucho envoltorio, <div class = "cuerpo cate">reutilizar</div> al máximo bolsas plásticas, envases de vidrio, hojas de papel y otros materiales, y <div class = "cuerpo cate">reciclar</div> separando tu basura.</p>';
+                valcat = '<p class = "cuerpo techo">Tu generacion de contaminacion es mayor en <div class = "cate cuerpo"> generacion de basura </div> </p> <p class="cuerpo suelo">Te recomendamos<span class="cuerpo cate">reducir</span> las compras de productos con mucho envoltorio,<span class="cuerpo cate">reutilizar</span> al máximo bolsas plásticas, envases de vidrio, hojas de papel y otros materiales, y <span class="cuerpo cate">reciclar</span> separando tu basura.</p>';
             } else if (c == catMa) {
                 valcat = '<p class = "cuerpo techo">Tu generacion de contaminacion es mayor en <div class = "cate cuerpo"> Gasto de agua </div> </p> <p class = "cuerpo suelo">Te recomendamos reducir el consumo de carne y otros alimentos de origen animal, evitar las bebidas embotelladas, utilizar papel reciclado, aprovechar el agua de lluvia y revisar posibles fugas en tu hogar, ya que estas pueden representar hasta el 30% de la pérdida de agua en una ciudad.</p>';
             } else if (d == catMa) {

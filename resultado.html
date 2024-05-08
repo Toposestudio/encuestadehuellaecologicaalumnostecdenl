@@ -1,65 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado</title>
-    <link rel="stylesheet" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/anadido.css">
-    <link rel="icon" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/thewordmin.png" type="image/png">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/anadido.css">
+    <link rel="icon" href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/Imagenes/thewordmin.png" type="image/png">
+    
 </head>
 <body class="fondo">
     
-    <div class="encabezado">
-        <h1 style="color: white;">Resultado de tu huella ecologica</h1>
+    <div class="encabezadodepregunta">
+        <h1  style="color: rgb(255, 209, 122);">Caulcula tu huella ecologica</h1>
     </div>
+    <main class="fondomaindp">
 
-    <main class="fondomain">
-        <p class="cuerpo">Si la gente tuviera tus habitos, necesitariamos</p>
-        <div id="resultado" class="pf"></div> 
-        <p class="cuerpo">planetas</p>
-        <div id="resultadoCat"></div>
-    <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/index.html" class="botones">Volver a página principal</a>
+        <form id="formulario">
+            <!-- Pregunta 1 -->
+            <h2 id="pre1">¿Cuánto pagas de luz bimestralmente?</h2>
+            <select class="rellenado" name="sel1" id="sel1">
+                <option value="res11">menos de 153</option>
+                <option value="res12">más de 150 pero menos de 400</option>
+                <option value="res13">más de 400 pero menos de 1000</option>
+                <option value="res14">más de 1000 pero menos de 1800</option>
+                <option value="res15">más de 1800</option>
+            </select>
+            
+            <!-- Pregunta 2 -->
+            <h2 id="pre2">¿Cuánta basura tiras a la semana?</h2>
+            <select class="rellenado" name="sel2" id="sel2">
+                <option value="res21">menos de 2kg</option>
+                <option value="res22">más de 2kg pero menos de 4kg</option>
+                <option value="res23">más de 4kg pero menos de 7kg</option>
+                <option value="res24">más de 7kg pero menos de 10kg</option>
+                <option value="res25">más de 10kg</option>
+            </select>
+
+            <!-- Nuevas preguntas --><!--
+            <h2>¿Cuál es tu principal medio de transporte para desplazarte en distancias cortas y medianas?</h2>
+            <select class="rellenado" name="sel3" id="sel3">
+                <option value="res31">A pie o bicicleta</option>
+                <option value="res32">Transporte público</option>
+                <option value="res33">Automóvil propio</option>
+                <option value="res34">Automóvil compartido (carpooling)</option>
+                <option value="res35">Moto o scooter</option>
+            </select>
+
+            <h2>¿Cuánto tiempo usas este medio de transporte al día?</h2>
+            <input type="number" id="tiempoTransporte" min="0" step="1" value="0">
+
+            <h2>¿Cuentas con estufa eléctrica?</h2>
+            <select class="rellenado" name="sel4" id="sel4">
+                <option value="res41">Sí</option>
+                <option value="res42">No</option>
+            </select> -->
+
+            <!-- Continuar con el resto de preguntas... -->
+
+<h2>¿Cuánto pagas de agua bimestralmente?</h2>
+<select class="rellenado" name="sel5" id="sel5">
+    <option value="res51">menos de 100</option>
+    <option value="res52">100 a 200</option>
+    <option value="res53">200 a 500</option>
+    <option value="res54">500 a 1000</option>
+    <option value="res55">más de 1000</option>
+</select>
+
+<h2>¿Cuántas veces a la semana consumes productos de origen animal (carne, lácteos, huevos, etc.)?</h2>
+<select class="rellenado" name="sel6" id="sel6">
+    <option value="res61">0 veces</option>
+    <option value="res62">1-3 veces</option>
+    <option value="res63">4-6 veces</option>
+    <option value="res64">7-10 veces</option>
+    <option value="res65">más de 10 veces</option>
+</select>
+
+<h2>Si bebes alcohol, ¿Cuánto?</h2>
+<select class="rellenado" name="sel7" id="sel7">
+    <option value="res71">No bebo alcohol</option>
+    <option value="res72">menos de 2 vez por semana</option>
+    <option value="res73">2-3 veces por semana</option>
+    <option value="res74">4-5 veces por semana</option>
+    <option value="res75">6 o más veces por semana</option>
+</select>
+
+<h2>¿Cuántas veces a la semana optas por productos orgánicos y/o locales en lugar de productos convencionales?</h2>
+<select class="rellenado" name="sel8" id="sel8">
+    <option value="res81">Nunca</option>
+    <option value="res82">1-2 veces a la semana</option>
+    <option value="res83">3-5 veces a la semana</option>
+    <option value="res84">6-10 veces a la semana</option>
+    <option value="res85">más de 10 veces a la semana</option>
+</select>
+
+<h2>¿Cuántas veces al año realizas actividades voluntarias relacionadas con la conservación del medio ambiente?</h2>
+<select class="rellenado" name="sel9" id="sel9">
+    <option value="res91">Nunca</option>
+    <option value="res92">1-2 veces al año</option>
+    <option value="res93">3-5 veces al año</option>
+    <option value="res94">6-10 veces al año</option>
+    <option value="res95">más de 10 veces al año</option>
+</select>
+
+<!--<h2>¿Apoyas de alguna otra manera a una organización orientada al cuidado del medio ambiente?</h2>
+<select class="rellenado" name="sel10" id="sel10">
+    <option value="res101">No</option>
+    <option value="res102">Sí, con donaciones financieras</option>
+    <option value="res103">Sí, como voluntario/a</option>
+    <option value="res104">Sí, difundiendo información</option>
+    <option value="res105">Otra forma de apoyo</option>
+</select> -->
+
+<h2>¿Cuán grande es donde vives?</h2>
+<select class="rellenado" name="sel11" id="sel11">
+    <option value="res111">Pequeño (menos de 90 m²)</option>
+    <option value="res112">Mediano (90-160 m²)</option>
+    <option value="res113">Grande (más de 160 m²)</option>
+</select>
+
+<!--<h2>¿De qué material está construida tu casa?</h2>
+<select class="rellenado" name="sel12" id="sel12">
+    <option value="res121">Concreto</option>
+    <option value="res122">Madera</option>
+    <option value="res123">Adobe o ladrillo de barro</option>
+    <option value="res124">Otros materiales</option>
+</select> -->
+
+<h2>¿Cuántas personas en total viven allí?</h2>
+<select class="rellenado" name="totalPersonas" id="totalPersonas">
+    <option value="resP1">1 persona</option>
+    <option value="resP3">2 personas</option>
+    <option value="resP7">3 personas</option> 
+</select>
+
+<h2>¿Cuánto a la semana sales a una zona de esparcimiento (la expo, al estadio o a un centro comercial)?</h2>
+<select class="rellenado" name="sel13" id="sel13">
+    <option value="res131">Nunca</option>
+    <option value="res132">1-2 veces a la semana</option>
+    <option value="res133">3-5 veces a la semana</option>
+    <option value="res134">más de 5 veces a la semana</option>
+</select>
+
+        </form>
+        
+        <div class="dopre">
+            <a href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/resultado.html" id="terminarEncuesta" class="botones">Terminar</a>
+            <a href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/index.html" class="botones">Volver a página principal</a>
+        </div>
+    
     </main>
-    <script src="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/java/datos.js" type="module">
 
-document.addEventListener('DOMContentLoaded', function() {
-            const resultado = localStorage.getItem('resultadoCalculo');
-            const resultadoCat = localStorage.getItem('resultadoCalculoCat')
-            if (resultado) {
-                document.getElementById('resultado').innerText = parseFloat(resultado).toFixed(2);
-                document.getElementById('resultadoCat').innerText = parseFloat(resultadoCat).toFixed(2);
-            }
-        });
-        
-        document.getElementById('terminarEncuesta').addEventListener('click', function() {
-    vtot();
-    calcat();
-    console.log("nana")
-});
-        /*document.addEventListener('DOMContentLoaded', function() {
-            const resultado = localStorage.getItem('resultadoCalculo');
-            if (resultado) {
-                document.getElementById('resultado').innerText = parseFloat(resultado).toFixed(2);
-            }
-        });
+    <script src="https://toposestudio.github.io/huellaecologicaalumnostecdenl/java/datos.js" type="module">
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const cat1 = localStorage.getItem('cami');
-            console.error("Buscando...");
-            if (!cat1) {
-                console.error("si encontrado");
-                const catyElement = document.getElementById('cato');
-                if (catyElement) {
-                    catyElement.innerText = parseFloat(cat1).toFixed(2);
-                    console.error(cat1);
-                } else {
-                    console.error("Element with id 'caty' not found.");
-                }
-            }
-        });*/
-        
+
+
     </script>
-    <script src="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/java/categoria.js"></script>
-
 </body>
 </html>

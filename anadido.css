@@ -106,7 +106,7 @@
 .boxleft {
     width: 2vw;
     height: 10vh;
-    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/left.jpg");
+    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/left2.jpg");
     background-attachment: fixed;
     background-size: contain;
     position: absolute;
@@ -121,7 +121,7 @@
 .boxderech {
     width: 2vw;
     height: 10vh;
-    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/derecho.jpg");
+    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/derecho2.jpg");
     background-attachment: fixed;
     background-size: contain;
     position: absolute;

@@ -338,16 +338,16 @@ document.getElementById('sel8').addEventListener('change', function() {
             v81 = 0;
             break;
         case 'res82':
-            v81 = 0.5;
+            v81 = 0.3;
             break; 
         case 'res83':
-            v81 = 1;
+            v81 = 0.5;
             break;
         case 'res84':
-            v81 = 1.5;
+            v81 = 0.9;
             break; 
         case 'res85':
-            v81 = 2;
+            v81 = 1.25;
             break;  
     }
 });

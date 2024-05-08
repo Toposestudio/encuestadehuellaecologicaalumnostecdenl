@@ -1,5 +1,6 @@
 .encabezado {
-    width: 76%;
+    width: 65%;
+    height: 12vh;
     margin: auto;
     font-size: 18px;
     padding: 20px;
@@ -7,8 +8,13 @@
     z-index: 3;
 }
 
+.cate {
+    font-weight: bold;
+}
+
 .encabezadodepregunta {
     width: 76%;
+    height: 12vh;
     margin: auto;
     font-size: 18px;
     padding: 20px;
@@ -37,6 +43,14 @@
     background-color: white;
 }
 
+.techo {
+    margin-top: 40px;
+}
+
+.suelo {
+    margin-bottom: 50px;
+}
+
 .botones {
     text-decoration: none;
     background-color: rgb(206, 181, 134);
@@ -45,11 +59,14 @@
     border-style: solid;
     border-radius: 10px;
     border-color: rgb(83, 73, 54);
+    /*display: block; /* Mostrar como bloques */
+    white-space: nowrap; /* Evitar el salto de línea */
+    margin-bottom: 10px; /* Espacio entre botones */
     
 }
 
 .fondomain {
-    width: 76%;
+    width: 65%;
     padding: 20px;
     margin: auto;
     background-color: white;
@@ -62,10 +79,6 @@
     padding: 20px;
     margin: auto;
     background-color: white;
-}
-
-.recuadro {
-    padding: 45px 20px 15px 18px;
 }
 
 .hiper {
@@ -86,10 +99,14 @@
     color: rgb(0, 0, 0);
 }
 
+.sangria {
+    padding-left: 20px;
+}
+
 .boxleft {
-    width: 150px;
-    height: 800px;
-    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/left.jpg");
+    width: 2vw;
+    height: 10vh;
+    background-image: url("https://toposestudio.github.io/huellaecologicaalumnostecdenl/Imagenes/left.jpg");
     background-attachment: fixed;
     background-size: contain;
     position: absolute;
@@ -102,9 +119,9 @@
 }
 
 .boxderech {
-    width: 150px;
-    height: 800px;
-    background-image: url("https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/derecho.jpg");
+    width: 2vw;
+    height: 10vh;
+    background-image: url("https://toposestudio.github.io/huellaecologicaalumnostecdenl/Imagenes/derecho.jpg");
     background-attachment: fixed;
     background-size: contain;
     position: absolute;
@@ -120,7 +137,7 @@
 .pie {
     width: 100%;
     height: 90px;
-    background-color: rgb(255, 230, 198);
+    background-color: rgba(255, 230, 198, 0.438);
     text-align: center;
 }
 
@@ -151,6 +168,15 @@
     display: inline-block;
 }
 
+.dopre {
+    margin-top: 20px;
+}
+
+.pf {
+    width: 25%;
+    font-size: 100px;
+}
+
 @keyframes move {
     0% {
       background-position: left; /* Posición inicial de la imagen de fondo */
@@ -162,4 +188,19 @@
       background-position: left; /* Posición final de la imagen de fondo (se moverá completamente a la derecha) */
     }
 
+}
+
+@media screen and (max-width: 700px) {
+    .botones {
+        width: 100%; 
+    }
+    .fondomain {
+        width: 85%;
+    }
+    .botones {
+        display: block;
+    }
+    .encabezado {
+        width: 85%;
+    }
 }

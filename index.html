@@ -1,33 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Huella ecologica</title>
-    <link rel="stylesheet" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/anadido.css">
-    <link rel="icon" href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/Imagenes/thewordmin.png" type="image/png">
+    <title>Calculadora de Huella ecológica</title>
+    <link rel="stylesheet" href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/anadido.css">
+    <link rel="icon" href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/Imagenes/thewordmin.png" type="image/png">
 </head>
 <body class="fondo">
     <div class="encabezado">
-        <h1 style="color: white;">Calcula tu huella ecologica</h1>
+        <h1 style="color: white;">Calcula tu huella ecológica</h1>
     </div>
-    <div class="boxderech"></div>
-    <div class="boxleft"></div>
+    <div class="boxderech" id="elementoAjustable"></div>
+    <div class="boxleft" id="elementoAjustables"></div>
     
-    <main class="fondomain">
-        <h2 class="subtitulo">Una pequeña introduccion</h2>
-        <p class="cuerpo">  El presente sitio web pretende encuestar y recopilar informacion sobre la huella ecologica de la gente, todo esto se realizo como parte del curso "Desarollo sustentable" por estudiantes de ingenieria (mas informacion al pie de pagina)
+    <main class="fondomain" id="mainElement">
+        <h2 class="subtitulo ">Una pequeña introducción</h2>
+        <p class="cuerpo">      <span class="sangria">El</span> presente sitio web pretende encuestar y recopilar información sobre la huella ecológica de la gente. Todo esto se realizó como parte del curso "Desarrollo sostenible" por estudiantes de ingeniería.
         </p>
-        <div class="recuadro">
-        <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/calculadora.html" class="botones" style="color: black;">Calcula tu huella ecologica</a>
-        <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/datos.html" class="botones" style="color: black;">Datos recopilados</a>
-        </div>
-        <h2 class="subtitulo"> ¿Que es la huella ecologica?</h2>
-        <p class="cuerpo">  La huella ecológica es una medida de la cantidad de recursos naturales que una persona, comunidad o país consume para mantener su estilo de vida particular. Se calcula teniendo en cuenta diversos factores, como el consumo de alimentos, el uso de energía, el transporte, la vivienda y otros recursos necesarios para mantener el nivel de vida de una persona o una sociedad. <br> <br> Esta medida se expresa generalmente en unidades de área de tierra o agua necesarias para producir los recursos consumidos y para absorber los residuos generados, todo ello en un periodo de tiempo determinado, generalmente un año. La huella ecológica ayuda a entender la presión que ejerce la humanidad sobre los recursos naturales y el medio ambiente, y puede utilizarse para informar y orientar políticas y decisiones en pro de la sostenibilidad ambiental.
+
+        <a href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/calculadora.html" class="botones" style="color: black;">Calcula tu huella ecologica</a>
+        <!--<a href="https://toposestudio.github.io/huellaecologicaalumnostecdenl/datos.html" class="botones" style="color: black;">Datos recopilados</a> -->
+        
+        <h2 class="subtitulo">¿Qué es la huella ecológica?</h2>
+        <p class="cuerpo">La huella ecológica es una medida de la cantidad de recursos naturales que una persona, comunidad o país consume para mantener su estilo de vida particular. Se calcula teniendo en cuenta diversos factores, como el consumo de alimentos, el uso de energía, el transporte, la vivienda y otros recursos necesarios para mantener el nivel de vida de una persona o una sociedad. <br> <br> Esta medida se expresa generalmente en unidades de área de tierra o agua necesarias para producir los recursos consumidos y para absorber los residuos generados, todo ello en un periodo de tiempo determinado, generalmente un año. La huella ecológica ayuda a entender la presión que ejerce la humanidad sobre los recursos naturales y el medio ambiente, y puede utilizarse para informar y orientar políticas y decisiones en pro de la sostenibilidad ambiental.
         </p>
-        <h2 class="subtitulo"> ¿En que nos respaldamos para este calculo?</h2>
+        <h2 class="subtitulo">¿En qué nos respaldamos para este cálculo?</h2>
         <p class="cuerpo">
-        Principalmente nos emos apoyado de Global Footprint Network, se trata de una organización internacional sin fines de lucro que se enfoca en la medición y análisis del impacto humano en el medio ambiente, específicamente en relación con la huella ecológica y la biocapacidad de la Tierra. Su objetivo es promover la sostenibilidad mediante la evaluación del uso de recursos naturales por parte de la humanidad y compararlo con la capacidad regenerativa de la Tierra. <br> Si desea conocer mas informacion de la organizacion puede <a href="https://www.footprintnetwork.org/" title="Link a la pagina de clobal Footprint Network">precionar aqui.</a>
+        Principalmente nos emos apoyado de Global Footprint Network, se trata de una organización internacional sin fines de lucro que se enfoca en la medición y análisis del impacto humano en el medio ambiente, específicamente en relación con la huella ecológica y la biocapacidad de la Tierra. Su objetivo es promover la sostenibilidad mediante la evaluación del uso de recursos naturales por parte de la humanidad y compararlo con la capacidad regenerativa de la Tierra. <br> <br> Si desea conocer más información de la organización, <a href="https://www.footprintnetwork.org/" title="Link a la pagina de clobal Footprint Network">presione aquí.</a>
         </p>
         
     </main>
@@ -39,9 +40,9 @@
         <!--<div class="rec">
             <div class="incon"><p class="dedo">quienes somos</p> <a href="presentacion.html">conocenos</a></div>
         </div> -->
-        <div class="dete"><p class="dedo">¿Quienes somos?<br> <a href="https://toposestudio.github.io/encuestadehuellaecologicaalumnostecdenl/presentacion.html" title="Pagina que nos presenta">conocenos</a></p>
-        </div>
+        <!--<div class="dete"><p class="dedo">quienes somos <br> <a href="/presentacion.html" title="Pagina que nos presenta">conocenos</a></p>
+        </div>-->
     </div>
-    
+    <script src="https://toposestudio.github.io/huellaecologicaalumnostecdenl/java/dinamico.js"></script>
 </body>
 </html>

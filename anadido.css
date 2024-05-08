@@ -203,4 +203,7 @@
     .encabezado {
         width: 85%;
     }
+    .rec {
+        margin-left: 0px;
+    }
 }

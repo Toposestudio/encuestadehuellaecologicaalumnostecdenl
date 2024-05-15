@@ -272,8 +272,8 @@ document.getElementById('sel5').addEventListener('change', function() {
             break; 
         case 'res55':
             v51 = 1.7;
-            v52 = 1.1;
-            v53 = 1.5;
+            v52 = 1.5;
+            v53 = 1.1;
             c1 = 5000;
             break;  
     }
